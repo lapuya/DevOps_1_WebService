@@ -2,9 +2,9 @@
 _Esta actividad consiste en crear un servicio web sencillo._
 
 ### Requisitos 📋
-_Se pide al alumno programar un servicio web. Este servicio web deberá escuchar en el puerto 12345 y expondrá dos endpoints:
+_Se pide al alumno programar un servicio web. Este servicio web deberá escuchar en el puerto 12345 y expondrá dos endpoints:_
 
-El primero recibe una cadena de caracteres, de longitud arbitraria, y la almacena en un fichero en disco.
+_El primero recibe una cadena de caracteres, de longitud arbitraria, y la almacena en un fichero en disco.
 El segundo recibirá una única palabra (sin espacios). Se devolverá el número total de las cadenas del citado fichero que la contengan, sin tener en cuenta:
  · Mayúsculas (CADENA == Cadena).
  · Posibles acentos (avión == Avion).
