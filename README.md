@@ -18,9 +18,12 @@ Existía libertad de elección del lenguaje, si bien se recomendaba JAVA o Pytho
 * pipenv -> para la creación de un entorno virtual
 * uvicorn -> servidor ASGI para servir nuestra API
 * FastAPI -> framework para crear REST APIs
-* Línea de comandos bash
+* Línea de comandos bash (UNIX) / Símbolo del sistema - cmd (Windows)
 
-Se recomendaba el uso de Flask, pero finalmente se ha decidido probar FastAPI
+Se recomendaba el uso de Flask, pero finalmente se ha decidido probar FastAPI.
+El ejercicio se ha desarrollado y probado en los siguientes sistemas operativos:
+* Windows 10
+* OS
 
 ### Pasos e instalación 🔧
 Instalación de pipenv usando _pip_:
@@ -80,7 +83,9 @@ Y en la terminal:
 
 ![alt text](https://github.com/lapuya/DevOps_1_WebService/blob/master/src/imgs/query_ok.png)
 
-
+### Calificación
+* Nuestra base de datos es un archivo llamado data.txt y que se crea si no existe. De esta forma persiste en el disco.
+* Para la consulta, pasamos a minúsculas cada cadena y se cambia las letras con acento.
 
 ### Referencias 🛠️
 * [Servidor ASGI](https://channels.readthedocs.io/en/latest/asgi.html)
