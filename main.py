@@ -1,6 +1,8 @@
 # main.py
 import uvicorn
 from fastapi import FastAPI
+from pathlib import Path
+
 
 app = FastAPI()
 
@@ -13,7 +15,10 @@ def add(string):
 
 @app.get("/consulta")
 def buscar(string):
-    #troceamos para ignorar saltos de línea
+    #si el fichero no existe, la creamos
+    file = Path('data.txt')
+    file.touch(exist_ok=True)
+    #abrimos y troceamos el contenido
     dataBase = open("data.txt", "r").read().splitlines()
     i = 0
     #quitamos los tildes con el metodo maketrans (traduccion)

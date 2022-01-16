@@ -49,7 +49,7 @@ python main.py
 ### Pruebas ⚙️
 Después de ejecutar el código de arriba nos aparecerá esto, que querrá decir que el servidor está listo:
 
---IMAGEN
+![alt text](https://github.com/lapuya/DevOps_1_WebService/blob/master/src/imgs/uvicorn_ready.png)
 
 FastAPI posee una API interactiva donde realizaremos las pruebas: 
 ```
@@ -57,7 +57,7 @@ http://127.0.0.1:12345/docs
 ```
 Donde podremos ver lo siguiente y donde podremos empezar a realizar las operaciones deseadas:
 
---IMAGEN
+![alt text](https://github.com/lapuya/DevOps_1_WebService/blob/master/src/imgs/fastapi_1.png)
 
 Abrimos la pestaña de _almacena_ y probaremos a introducir varias veces camión (se puede probar con lo que se quiera):
 ```
@@ -70,15 +70,15 @@ Tengo un CamIÓn
 ```
 Mientras introducimos estos datos en la API interactiva, en la terminal debería estar produciendo estas salidas que indica que todo va bien:
 
---IMAGEN
+![alt text](https://github.com/lapuya/DevOps_1_WebService/blob/master/src/imgs/post_queries_ok.png)
 
 Ahora probaremos el de consulta y, si el ejercicio esta correctamente realizado, al consultar por la palabra _camion_ debería indicarnos de que existen 6 elementos.
 
---IMAGEN
+![alt text](https://github.com/lapuya/DevOps_1_WebService/blob/master/src/imgs/query_consulta_ok.png)
 
 Y en la terminal:
 
---IMAGEN
+![alt text](https://github.com/lapuya/DevOps_1_WebService/blob/master/src/imgs/query_ok.png)
 
 
 
