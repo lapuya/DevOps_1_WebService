@@ -42,10 +42,49 @@ En nuestro código añadiremos la siguiente línea:
 if __name__ == "___main__":
 	uvicorn.run(app, host="127.0.0.1", port=12345)
 ```
-De esta manera solo tendremos que ejecutar el siguiente comando para que funcione:
+De esta manera solo tendremos que ejecutar el siguiente comando para que funcione (y que escuche por el puerto 12345, tal y como se pide en el ejercicio):
 ```
 python main.py
 ```
+### Pruebas ⚙️
+Después de ejecutar el código de arriba nos aparecerá esto, que querrá decir que el servidor está listo:
+
+--IMAGEN
+
+FastAPI posee una API interactiva donde realizaremos las pruebas: 
+```
+http://127.0.0.1:12345/docs
+```
+Donde podremos ver lo siguiente y donde podremos empezar a realizar las operaciones deseadas:
+
+--IMAGEN
+
+Abrimos la pestaña de _almacena_ y probaremos a introducir varias veces camión (se puede probar con lo que se quiera):
+```
+camión
+camion
+ahi hay un camión
+CamIon
+Camión
+Tengo un CamIÓn
+```
+Mientras introducimos estos datos en la API interactiva, en la terminal debería estar produciendo estas salidas que indica que todo va bien:
+
+--IMAGEN
+
+Ahora probaremos el de consulta y, si el ejercicio esta correctamente realizado, al consultar por la palabra _camion_ debería indicarnos de que existen 6 elementos.
+
+--IMAGEN
+
+Y en la terminal:
+
+--IMAGEN
 
 
+
+### Referencias 🛠️
+* [Servidor ASGI](https://channels.readthedocs.io/en/latest/asgi.html)
+* [uvicorn](https://www.uvicorn.org)
+* [pipenv](https://pipenv-es.readthedocs.io/es/latest/)
+* [FastAPI](https://fastapi.tiangolo.com)
 

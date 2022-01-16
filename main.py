@@ -24,7 +24,7 @@ def buscar(string):
 	    new_line = new_line.translate(trans)
 	    if (string in new_line):
 		    i += 1 
-
+    print(i)	
     return {"number" : i}
 
 @app.get("/")
